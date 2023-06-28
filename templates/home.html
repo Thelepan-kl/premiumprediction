@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<body>
+    <div class="login">
+<h1>
+    Premium Price prediction ML APP 
+</h1>
+<form action="{{ url_for('predict')}}"method="post">
+    <input type="text" name="age" placeholder="age" required="required" /><br>
+      <input type="text" name="bmi" placeholder="bmi" required="required" /><br>
+      <input type="text" name="children" placeholder="children" required="required" /><br>
+      <input type="text" name="sex_e" placeholder="sex" required="required" /><br>
+      <input type="text" name="smoker_e" placeholder="smoker" required="required" /><br>
+      <input type="text" name="region_e" placeholder="region" required="required" /><br>
+      
+      
+
+     
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+  <br>
+  <br>
+ 
+  
+</div>
+{{prediction_text}}
+
+</body>
+</html>
