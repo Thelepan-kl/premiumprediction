@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,#ed0923,#7462ff,rgb(183, 64, 169));
+}
+.login{
+    width:25%;
+    background:rgb(189, 174, 195);
+    margin:auto;
+    margin-top:100px;
+    padding-left:5%;
+    border: black 2px solid;
+    border-radius: 20px;
+}
+.f1{
+    color:rgb(72, 69, 69);
+}
+.f2{
+    width:25%;
+    margin:auto;
+}
+.f2{
+    width:25%;
+    color:rgb(50, 50, 50);
+    margin:auto;
+    padding-left:5%;
+
+}
+.button{
+    background-color:rgb(10, 34, 72);
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    border:black 2px solid;
+    border-radius:10px;
+}
+.button:hover{
+background: rgb(7, 187, 19);
+color: rgb(0, 0, 0);
+}
+.f3{
+    padding-top: 20px;
+}

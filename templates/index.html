@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html >
+<html>
+<head>
+    <link rel="stylesheet"  href="{{url_for('static',filename='css/style.css')}}">
+</head>
 <body>
+    
     <div class="login">
-<h1>
-    Premium Price prediction ML APP 
-</h1>
+        <div class="f1">
+            <h1>
+                Premium Price prediction 
+            </h1>
+            </div>
 <form action="{{ url_for('predict')}}"method="post">
-    <input type="text" name="age" placeholder="age" required="required" /><br>
-      <input type="text" name="bmi" placeholder="bmi" required="required" /><br>
-      <input type="text" name="children" placeholder="children" required="required" /><br>
-      <input type="text" name="sex_e" placeholder="sex" required="required" /><br>
-      <input type="text" name="smoker_e" placeholder="smoker" required="required" /><br>
-      <input type="text" name="region_e" placeholder="region" required="required" /><br>
+      <input type="text" name="age" placeholder="Age" required="required" /><br>
+      <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
+      <input type="text" name="children" placeholder="Children" required="required" /><br>
+      <input type="text" name="sex_e" placeholder="Sex" required="required" /><br>
+      <input type="text" name="smoker_e" placeholder="Smoker" required="required" /><br>
+      <input type="text" name="region_e" placeholder="Region" required="required" /><br>
       
       
 
      
-
-      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      <div class="f3">
+      <button type="submit" class="button">Predict</button>
+      </div>
   </form>
   <br>
   <br>
  
   
 </div>
+<div class="f2">
 <h2>{{prediction_text}}</h2>
-
+</div>
 </body>
 </html>
